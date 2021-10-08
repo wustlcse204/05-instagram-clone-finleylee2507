@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Instagram Page</title>
+    <meta name="description" content="An instagram clone">
+    <meta name="author" content="Finley Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+    <header class="insta-header" id="insta-header">
+
+        <div class="header-logo-search">
+            <a href="https://www.instagram.com/?hl=en"><img src="./imgs/icons/instalogo.png" alt="Insta logo"
+                    id="insta-logo"></a>
+            <input type="search" id="search-bar" placeholder="Search">
+
+        </div>
+
+
+        <nav class="header-nav">
+            <a href="#">
+                <img src="./imgs/icons/compass.jpg" alt="explore" id="compass-icon">
+            </a>
+            <a href="#">
+                <img src="./imgs/icons/like.jpg" alt="activities" id="heart-icon">
+            </a>
+            <a href="#">
+                <img src="./imgs/icons/people.jpg" alt="profile" id="people-icon">
+            </a>
+        </nav>
+
+
+    </header>
+
+    <div class="main-section">
+        <!-- 1st column -->
+        <div>
+            <!-- first post (washu) -->
+            <div class="post" id="first-post">
+                <img src="./imgs/profile pics/andrew-martin.jpg" alt="Andrew Martin" class="profile-pic-post"> <span
+                    id="andrew-martin-username" class="post-top-username">Andrew D Martin</span>
+
+                <div class="post-image-container">
+                    <img src="./imgs/posts/Brookings.jpg" alt="WashU" class="insta-post-image">
+                </div>
+
+                <div class="button-section">
+                    <a href="#">
+                        <img src="./imgs/icons/like-post.png" alt="like button" class="post-button" id="like-button1">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/icons/comment-post.png" alt="comment button" class="post-button"
+                            id="comment-button1">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/icons/share-post.png" alt="share button" class="post-button"
+                            id="share-button1">
+                    </a>
+
+                    <a href="#">
+                        <img src="./imgs/icons/save-post.png" alt="save button" class="post-button" id="save-button1">
+                    </a>
+
+                </div>
+
+                <div class="captions-and-comments">
+
+                    <p class="number-of-likes">120 likes</p>
+                    <p class="post-caption"><span class="caption-username">Andrew D Martin</span> Man I love WashU!</p>
+                    <p class="post-time-stamp">12 HOURS AGO</p>
+
+                    <div class="comment-section">
+                        <input type="text" class="post-comment" placeholder="Add a comment...">
+                        <a href="#"><img src="./imgs/icons/dots-post.png" alt="other actions"
+                                class="post-other-options"></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- second post (kobe) -->
+            <div class="post" id="second-post">
+                <img src="./imgs/profile pics/lebron-james.jpg" alt="Lebron James" class="profile-pic-post"> <span
+                    id="lebron-james-username" class="post-top-username">kingjames</span>
+
+                <div class="post-image-container">
+                    <img src="./imgs/posts/kobe.jpg" alt="Kobe" class="insta-post-image">
+                </div>
+
+                <div class="button-section">
+                    <a href="#">
+                        <img src="./imgs/icons/like-post.png" alt="like button" class="post-button" id="like-button2">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/icons/comment-post.png" alt="comment button" class="post-button"
+                            id="comment-button2">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/icons/share-post.png" alt="share button" class="post-button"
+                            id="share-button2">
+                    </a>
+
+                    <a href="#">
+                        <img src="./imgs/icons/save-post.png" alt="save button" class="post-button" id="save-button2">
+                    </a>
+
+                </div>
+
+                <div class="captions-and-comments">
+
+                    <p class="number-of-likes">25,100,202 likes</p>
+                    <p class="post-caption"><span class="caption-username">kingjames</span> RIP legend!</p>
+                    <p class="post-time-stamp">3 HOURS AGO</p>
+
+                    <div class="comment-section">
+                        <input type="text" class="post-comment" placeholder="Add a comment...">
+                        <a href="#"><img src="./imgs/icons/dots-post.png" alt="other actions"
+                                class="post-other-options"></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="suggestions-section">
+                <span class="suggestions-text">Suggestions For You</span>
+                <a href="#" class="suggestions-see-all">See All</a>
+
+                <!-- suggestions -->
+
+                <div class="suggestions-wrapper">
+                    <div class="suggestion-container" id="slso">
+
+                        <img src="./imgs/suggested/slso.jpg" alt="slso-profile" id="slso-profile"
+                            class="suggestion-profile">
+                        <p class="suggested-profile-text">stlsymphony </p>
+                        <p class="suggested-followed-by">Followed by zookeeperwu</p>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+
+
+                    <div class="suggestion-container" id="jimmy-fallon">
+                        <img src="./imgs/suggested/jimmy-fallon.jpg" alt="jimmy-fallon-profile"
+                            id="jimmy-fallon-profile" class="suggestion-profile">
+                        <p class="suggested-profile-text">jimmyfallon <img src="./imgs/icons/verified.png"
+                                alt="verified icon" class="verified-icon">
+                        </p>
+                        <p class="suggested-followed-by">Followed by beautiful-human</p>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+
+                    <div class="suggestion-container" id="ben-simmons">
+                        <img src="./imgs/suggested/ben-simmons.jpg" alt="ben-simmons-profile" id="ben-simmons-icon"
+                            class="suggestion-profile">
+                        <p class="suggested-profile-text">bensimmons <img src="./imgs/icons/verified.png"
+                                alt="verified icon" class="verified-icon">
+                        </p>
+                        <p class="suggested-followed-by">Followed by kingjames +2...</p>
+                        <a href="#" class="follow-button">Follow</a>
+                    </div>
+
+
+                    <!-- the arrow button -->
+                    <a href="#" class="next-arrow">></a>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <!-- 2nd column -->
+        <div>
+            <div id="my-story">
+                <img src="./imgs/profile pics/my-profile.jpg" alt="my profile" id="my-profile-icon">
+                <span id="my-username">finleylee2507</span>
+                <span id="my-real-name">Finley Li</span>
+
+            </div>
+
+            <div id="all-stories-container">
+
+                <div id="stories-and-watch-all">
+                    <span id="stories-text">Stories</span>
+                    <a href="#" id="stories-watch-all"> Watch All</a>
+                </div>
+
+
+                <div class="experiment">
+                    <div id="all-stories">
+                        <div class="single-story">
+                            <a href="#">
+    
+                                <img src="./imgs/stories/nba.jpg" alt="nba" class="stories-profile">
+                                <img src="./imgs/stories/insta-ring.png" alt="insta-ring" class="insta-ring">
+                                <div>
+                                    <p class="stories-username">nba</p>
+                                    <p class="story-time-stamp">3 HOURS AGO</p>
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+    
+                        <div class="single-story">
+                            <a href="#">
+                                <img src="./imgs/stories/marvel.jpg" alt="marvel" class="stories-profile">
+                                <img src="./imgs/stories/insta-ring.png" alt="insta-ring" class="insta-ring">
+    
+                                <div>
+                                    <p class="stories-username">marvel</p>
+                                    <p class="story-time-stamp">2 HOURS AGO</p>
+    
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+    
+                        <div class="single-story">
+                            <a href="#">
+                                <img src="./imgs/stories/taylor-swift.jpg" alt="tayler swift" class="stories-profile">
+                                <img src="./imgs/stories/insta-ring.png" alt="insta-ring" class="insta-ring">
+    
+                                <div>
+                                    <p class="stories-username">taylorswift</p>
+                                    <p class="story-time-stamp">6 HOURS AGO</p>
+                                </div>
+    
+                            </a>
+                        </div>
+    
+                        <div class="single-story">
+                            <a href="#">
+                                <img src="./imgs/stories/kim.jpg" alt="kimjongun" class="stories-profile">
+                                <img src="./imgs/stories/insta-ring.png" alt="insta-ring" class="insta-ring">
+                                <div>
+                                    <p class="stories-username">kimjongun_official</p>
+                                    <p class="story-time-stamp">3 HOURS AGO</p>
+                                </div>
+    
+                            </a>
+    
+                        </div>
+    
+    
+                        <div class="single-story">
+                            <a href="#">
+                                <img src="./imgs/stories/wustl.png" alt="wustl" class="stories-profile">
+                                <img src="./imgs/stories/insta-ring.png" alt="insta-ring" class="insta-ring">
+                                <div>
+                                    <p class="stories-username">wustl_official</p>
+                                    <p class="story-time-stamp">12 HOURS AGO</p>
+                                </div>
+    
+                            </a>
+                        </div>
+    
+                        <div class="single-story">
+                            <a href="#">
+                                <img src="./imgs/stories/fiba.png" alt="fiba" class="stories-profile">
+                                <img src="./imgs/stories/insta-ring.png" alt="insta-ring" class="insta-ring">
+    
+                                <div>
+                                    <p class="stories-username">fiba</p>
+                                    <p class="story-time-stamp">20 HOURS AGO</p>
+                                </div>
+    
+                            </a>
+                        </div>
+    
+    
+    
+    
+    
+    
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <footer>
+            <a href="#">About Us</a> • <a href="#">Support</a> • <a href="#">Press</a> • <a href="#">API</a>
+            •
+            <a href="#">Jobs</a> • <br>
+            <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Directory</a> • <a href="#">Profiles</a> •
+            <br>
+            <a href="#">Hashtags</a> •
+            <a href="#">Language</a>
+            <p id="copy right">&copy; 2018 INSTAGRAM</p>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

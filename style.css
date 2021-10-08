@@ -1,0 +1,373 @@
+body {
+    /* taken from instagram website */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    border-bottom: 1px solid rgba(36, 35, 35, 0.098);
+    top: 0;
+    left: 0;
+    padding: 14px 2px 14px 2px;
+    /* to make sure it doesn't get covered by something else  */
+    z-index: 3;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-logo-search {
+    position: relative;
+    left: 20%;
+}
+
+#insta-logo {
+    /* margin-top: 0.5%; */
+    height: 50px;
+    width: auto;
+}
+
+.header-nav {
+    position: relative;
+    left: 68%;
+    margin-top: -43px;
+    z-index: 2;
+}
+
+#compass-icon, #heart-icon, #people-icon {
+    height: 25px;
+    width: auto;
+    margin-right: 30px;
+}
+
+/* when idle  */
+
+#search-bar {
+    padding: 12px 12px 12px 36px;
+    background-color: #fafafa;
+    position: fixed;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    left: 43.55%;
+    width: 215px;
+    height: 12px;
+    color: #8f8f8f;
+    outline: 0;
+    z-index: 2;
+    font-size: 0.85em;
+    margin-top: 11px;
+    background-image: url(./imgs/icons/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 35%, 65%;
+}
+
+/* when in focus  */
+
+#search-bar:focus {
+    background-color: #ffffff;
+    background-position: 10%;
+    text-align: left;
+}
+
+.main-section {
+    margin-top: 80px;
+}
+
+.profile-pic-post {
+    height: 31px;
+    width: auto;
+    border-radius: 16px;
+    margin: 15px 0px 0px 17px
+}
+
+.post {
+    width: 614px;
+    background-color: #fffefe;
+    border: 1px solid #dbd6d6;
+    border-radius: 3.5px;
+}
+
+.insta-post-image {
+    width: 614px;
+    height: auto;
+}
+
+.suggestions-see-all {
+    font-size: 14px;
+    color: #3897f0;
+    font-weight: 700;
+    margin-left: 65%;
+}
+
+.suggestion-container {
+    border: 1px solid #e4e3e3;
+    border-radius: 3.5px;
+    height: 180px;
+    width: 130px;
+    padding: 10px 23px 13px 23px;
+    text-align: center;
+}
+
+.suggested-profile-text {
+    font-weight: 700;
+}
+
+.post-image-container {
+    margin: 12px 0px 7px 0px;
+}
+
+#first-post {
+    margin-top: 120px;
+}
+
+#second-post {
+    margin-top: 50px;
+}
+
+#like-button1, #comment-button1, #share-button1, #like-button2, #comment-button2, #share-button2 {
+    margin-left: 12px;
+    width: 25px;
+    height: auto;
+}
+
+#save-button1, #save-button2 {
+    height: 30px;
+    position: relative;
+    left: 73%;
+}
+
+.suggestion-profile, .stories-profile {
+    width: 50px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.insta-ring {
+    width: 55px;
+    height: auto;
+    position: relative;
+    right: 57px;
+    top: 3px;
+}
+
+.post-top-username {
+    position: relative;
+    top: -8px;
+    left: 5px;
+}
+
+.post-top-username, .caption-username, .number-of-likes, #my-username, .stories-username {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.number-of-likes {
+    margin-left: 2%;
+}
+
+.post-caption {
+    font-weight: 450;
+    font-size: 14px;
+    margin-left: 2%;
+}
+
+.post-time-stamp {
+    font-size: 12px;
+    color: rgb(175, 170, 170);
+    margin-left: 2%;
+}
+
+.post-comment {
+    width: 95%;
+    border: none;
+    border-top: 1px solid #efefef;
+    font-size: 14px;
+    padding-top: 14.5px;
+    margin-left: 2%;
+}
+
+.post-other-options {
+    position: relative;
+    left: 95%;
+    width: 15px;
+    top: -15px;
+}
+
+.suggestions-section {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    border-radius: 3.5px;
+    width: 580px;
+    padding: 17px;
+    margin-top: 60px;
+}
+
+.suggestions-text {
+    background-color: #fff;
+    color: rgb(131 128 128);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.suggested-followed-by {
+    color: rgb(170 168 168);
+    font-size: 14px;
+}
+
+.verified-icon {
+    width: 15px;
+}
+
+.follow-button {
+    font-weight: 600;
+    border: 1px solid #3897f0;
+    background-color: #3897f0;
+    color: white;
+    padding: 3px 35px 3px 35px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.suggestions-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.next-arrow {
+    background-color: gray;
+    height: 25px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 0px 6px;
+    font-weight: 1000;
+    color: #e5e0e0;
+    margin-top: 80px;
+    margin-left: -40px;
+    opacity: 0.9;
+}
+
+#my-profile-icon {
+    height: 50px;
+    width: 50px;
+    /* width: auto; */
+    border-radius: 25px;
+    border: 1px solid #cccccc;
+}
+
+#my-real-name {
+    color: rgb(170 168 168);
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+#my-story {
+    position: relative;
+    left: 10px;
+    width: 295px;
+}
+
+#my-username {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#stories-and-watch-all {
+    border-top: 1px solid rgba(36, 35, 35, 0.098);
+    width: 295px;
+    margin-top: 15px;
+    padding: 12px 10px;
+}
+
+#stories-text {
+    color: rgb(131 128 128);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#stories-watch-all {
+    margin-left: 160px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.story-time-stamp {
+    font-size: 12px;
+    color: rgb(175, 170, 170);
+    margin: 0px;
+}
+
+.stories-username {
+    margin: 0px;
+}
+
+#all-stories {
+    width: 295px;
+    border-bottom: 1px solid rgba(36, 35, 35, 0.098);
+    height: 330px;
+    overflow-y: scroll;
+    
+}
+
+#all-stories::after{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  width: 295px;
+  height: 30px;
+  background: linear-gradient(transparent,#fafafa);
+}
+
+#all-stories-container {
+    width: 295px;
+    position: relative;
+}
+
+.single-story {
+    margin-left: 7%;
+    margin-bottom: 2%;
+    height: 70px;
+}
+
+.single-story a div {
+    position: relative;
+    left: 60px;
+    top: -50px;
+}
+
+footer, footer a {
+    color: rgb(170 168 168);
+    font-size: 11px;
+}
+
+/* hide scroll bar  */
+
+/* citation:https://blog.hubspot.com/website/hide-scrollbar-css */
+
+element {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.experiment{
+    position:relative;
+}
+
