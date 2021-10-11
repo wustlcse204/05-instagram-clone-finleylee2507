@@ -17,6 +17,23 @@ header {
     z-index: 3;
 }
 
+.main-section {
+    position: absolute;
+    left: 20%;
+}
+
+#first-column {
+    display: inline-block;
+    margin-top: -100px;
+}
+
+#second-column {
+    display: inline-block;
+    position: fixed;
+    margin-top: 17px;
+    margin-left: 2%;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -28,15 +45,16 @@ a {
 }
 
 #insta-logo {
-    /* margin-top: 0.5%; */
     height: 50px;
     width: auto;
+    position: fixed;
+    left: 20%;
 }
 
 .header-nav {
-    position: relative;
+    position: fixed;
     left: 68%;
-    margin-top: -43px;
+    margin-top: 10px;
     z-index: 2;
 }
 
@@ -316,16 +334,15 @@ a.next-arrow {
     border-bottom: 1px solid rgba(36, 35, 35, 0.098);
     height: 330px;
     overflow-y: scroll;
-    
 }
 
-#all-stories::after{
+#all-stories::after {
     content: '';
-  position: absolute;
-  bottom: 0;
-  width: 295px;
-  height: 30px;
-  background: linear-gradient(transparent,#fafafa);
+    position: absolute;
+    bottom: 0;
+    width: 295px;
+    height: 30px;
+    background: linear-gradient(transparent, #fafafa);
 }
 
 #all-stories-container {
@@ -366,8 +383,6 @@ element {
     display: none;
 }
 
-
-.experiment{
-    position:relative;
+.experiment {
+    position: relative;
 }
-
