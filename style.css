@@ -20,6 +20,8 @@ header {
 .main-section {
     position: absolute;
     left: 20%;
+    width:614px;
+    margin-top: 80px;
 }
 
 #first-column {
@@ -74,7 +76,7 @@ a {
     border: 1px solid #dbdbdb;
     border-radius: 4px;
     left: 43.55%;
-    width: 215px;
+    width: 200px;
     height: 12px;
     color: #8f8f8f;
     outline: 0;
@@ -94,9 +96,7 @@ a {
     text-align: left;
 }
 
-.main-section {
-    margin-top: 80px;
-}
+
 
 .profile-pic-post {
     height: 31px;
@@ -386,3 +386,102 @@ element {
 .experiment {
     position: relative;
 }
+
+/* media queries  */
+
+/* when side bar doesn't fit anymore  */
+@media (min-width: 1024px) and (max-width:1199px) {
+   
+    #second-column {
+        position: relative;
+        display: block;
+        left:15%;
+        top:50px;
+        
+    
+    }
+}
+
+
+/* for Landscape phones & tablets */
+
+@media (min-width: 705px) and (max-width: 1024px) {
+    .main-section{
+      
+    
+      
+        position:static;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    #first-column{
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .post{
+        margin:auto;
+    }
+    #second-column {
+        display: none;
+    }
+
+    #insta-logo{
+        left:5%;
+    }
+
+    #search-bar{
+        left:40%;
+    }
+
+    .header-nav{
+        left:80%;
+        width:fit-content;
+    }
+
+
+
+}
+
+
+/* any smaller device (mirror the actual insta behavior) */
+
+@media (max-width: 704px) {
+    .main-section{
+      
+    
+      
+        position:static;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    #first-column{
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .post{
+        margin:auto;
+    }
+    #second-column {
+        display: none;
+    }
+
+    #insta-logo{
+        left:5%;
+    }
+
+    /* hide the search bar  */
+    #search-bar{
+       display:none;
+    }
+
+    .header-nav{
+        left:70%;
+    }
+
+
+
+}
+
+
