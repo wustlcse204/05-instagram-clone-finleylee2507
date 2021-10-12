@@ -20,7 +20,6 @@ header {
 .main-section {
     position: absolute;
     left: 20%;
-    width:614px;
     margin-top: 80px;
 }
 
@@ -95,8 +94,6 @@ a {
     background-position: 10%;
     text-align: left;
 }
-
-
 
 .profile-pic-post {
     height: 31px;
@@ -390,98 +387,74 @@ element {
 /* media queries  */
 
 /* when side bar doesn't fit anymore  */
+
 @media (min-width: 1024px) and (max-width:1199px) {
-   
     #second-column {
         position: relative;
         display: block;
-        left:15%;
-        top:50px;
-        
-    
+        left: 15%;
+        top: 50px;
     }
 }
-
 
 /* for Landscape phones & tablets */
 
 @media (min-width: 705px) and (max-width: 1024px) {
-    .main-section{
-      
-    
-      
-        position:static;
+    .main-section {
+        width: 614px;
+        position: static;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
-
-    #first-column{
+    #first-column {
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
-    .post{
-        margin:auto;
+    .post {
+        margin: auto;
     }
     #second-column {
         display: none;
     }
-
-    #insta-logo{
-        left:5%;
+    #insta-logo {
+        left: 5%;
     }
-
-    #search-bar{
-        left:40%;
+    #search-bar {
+        left: 40%;
     }
-
-    .header-nav{
-        left:80%;
-        width:fit-content;
+    .header-nav {
+        left: 80%;
+        width: fit-content;
     }
-
-
-
 }
-
 
 /* any smaller device (mirror the actual insta behavior) */
 
 @media (max-width: 704px) {
-    .main-section{
-      
-    
-      
-        position:static;
+    .main-section {
+        width: 614px;
+        position: static;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
-
-    #first-column{
+    #first-column {
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
-    .post{
-        margin:auto;
+    .post {
+        margin: auto;
     }
     #second-column {
         display: none;
     }
-
-    #insta-logo{
-        left:5%;
+    #insta-logo {
+        left: 5%;
     }
-
     /* hide the search bar  */
-    #search-bar{
-       display:none;
+    #search-bar {
+        display: none;
     }
-
-    .header-nav{
-        left:70%;
+    .header-nav {
+        left: 70%;
     }
-
-
-
 }
-
-
